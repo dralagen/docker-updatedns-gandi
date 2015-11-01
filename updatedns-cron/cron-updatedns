@@ -1,0 +1,9 @@
+# /etc/cron.d/updatedns-cron
+
+# values replace by docker
+GANDI_API=DOCKER_GANDI_API
+GANDI_DOMAIN=DOCKER_GANDI_DOMAIN
+GANDI_ZONE_ID=DOCKER_GANDI_ZONE_ID
+
+*/15 * * * * root python2.7 /updatedns.py
+
